@@ -11,11 +11,25 @@ export default function Rsvp() {
     e.preventDefault();
     setStatus('submitting');
     
-    // Simulate API call
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const attendance = formData.get('attendance') as string;
+    const notes = formData.get('notes') as string;
+
+    const isAttending = attendance === 'yes' ? '¡Sí, ahí estaremos con alegría!' : 'Lamentablemente no podremos asistir.';
+    const notesText = notes ? `\n\nMensaje: ${notes}` : '';
+
+    const message = `¡Hola! Confirmo mi asistencia a la fiesta de Emily.\n\nFamilia/Invitado: ${name}\n¿Asistirán?: ${isAttending}${notesText}`;
+
+    // AQUÍ DEBES PONER TU NÚMERO DE TELÉFONO (CON CÓDIGO DE PAÍS, EJ. 52 PARA MÉXICO)
+    const phoneNumber = "5211234567890"; 
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
     setTimeout(() => {
       setStatus('success');
+      window.open(whatsappUrl, '_blank');
       (e.target as HTMLFormElement).reset();
-    }, 1500);
+    }, 800);
   };
 
   return (
