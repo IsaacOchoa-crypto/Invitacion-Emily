@@ -22,7 +22,7 @@ export default function Rsvp() {
     const message = `¡Hola! Confirmo mi asistencia a la fiesta de Emily.\n\nFamilia/Invitado: ${name}\n¿Asistirán?: ${isAttending}${notesText}`;
 
     // AQUÍ DEBES PONER TU NÚMERO DE TELÉFONO (CON CÓDIGO DE PAÍS, EJ. 52 PARA MÉXICO)
-    const phoneNumber = "5211234567890"; 
+    const phoneNumber = "524271914416"; 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
