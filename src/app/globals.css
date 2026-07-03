@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-great-vibes: var(--font-great-vibes);
+  --font-montserrat: var(--font-montserrat);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
