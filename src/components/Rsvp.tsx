@@ -19,17 +19,26 @@ export default function Rsvp() {
   };
 
   return (
-    <section className="py-24 bg-white relative">
+    <section className="relative py-24 overflow-hidden">
+      {/* Background with soft pastel overlay */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center opacity-80"
+        style={{ backgroundImage: 'url("/images/rsvp-bg.png")' }}
+      >
+      </div>
+      {/* Soft gradient/overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-white/40"></div>
+
       <div className="max-w-2xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-great-vibes text-5xl md:text-7xl text-[#cda3ba] mb-4">Confirma tu Asistencia</h2>
+          <h2 className="font-great-vibes text-5xl md:text-7xl text-[#cda3ba] mb-4 drop-shadow-sm">Confirma tu Asistencia</h2>
           <div className="w-16 h-[1px] bg-[#f0e6eb] mx-auto mb-6"></div>
           <p className="font-montserrat text-slate-500 font-light">
             Nos encantaría compartir este día contigo. Por favor, confirma antes del 1 de Julio.
           </p>
         </div>
 
-        <div className="bg-white p-8 md:p-12 shadow-[0_10px_50px_rgb(0,0,0,0.04)] rounded-3xl border border-[#f5f1ed] relative overflow-hidden">
+        <div className="bg-white/80 backdrop-blur-md p-8 md:p-12 shadow-[0_10px_50px_rgb(0,0,0,0.08)] rounded-3xl border border-white relative overflow-hidden">
           <AnimatePresence mode="wait">
             {status === 'success' ? (
               <motion.div 
@@ -90,43 +99,6 @@ export default function Rsvp() {
                   </select>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="adults" className="block font-montserrat text-xs font-medium text-slate-500 uppercase tracking-widest mb-2">
-                      Adultos
-                    </label>
-                    <select
-                      id="adults"
-                      name="adults"
-                      required
-                      className="w-full px-4 py-4 rounded-xl border border-[#f5f1ed] focus:ring-2 focus:ring-[#e6cda3] focus:border-[#e6cda3] transition-all font-montserrat outline-none bg-[#fcfbf9] focus:bg-white appearance-none text-sm"
-                    >
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="kids" className="block font-montserrat text-xs font-medium text-slate-500 uppercase tracking-widest mb-2">
-                      Niños
-                    </label>
-                    <select
-                      id="kids"
-                      name="kids"
-                      required
-                      className="w-full px-4 py-4 rounded-xl border border-[#f5f1ed] focus:ring-2 focus:ring-[#e6cda3] focus:border-[#e6cda3] transition-all font-montserrat outline-none bg-[#fcfbf9] focus:bg-white appearance-none text-sm"
-                    >
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                  </div>
-                </div>
 
                 <div>
                   <label htmlFor="notes" className="block font-montserrat text-xs font-medium text-slate-500 uppercase tracking-widest mb-2">
