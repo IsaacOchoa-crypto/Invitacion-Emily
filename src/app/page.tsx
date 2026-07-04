@@ -14,11 +14,11 @@ export default function Home() {
       <Rsvp />
       
       {/* Footer elegante */}
-      <footer className="py-12 text-center bg-white border-t border-[#f5f1ed]">
-        <p className="font-great-vibes text-3xl text-[#d4af37] mb-2">
+      <footer className="py-16 text-center bg-white border-t border-[#f5f1ed]">
+        <p className="font-great-vibes text-5xl md:text-6xl text-[#d4af37] drop-shadow-md mb-4">
           Familia Ochoa
         </p>
-        <p className="font-montserrat text-[10px] uppercase tracking-[0.3em] text-slate-400">
+        <p className="font-montserrat text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-slate-700">
           Los esperamos con cariño
         </p>
       </footer>
