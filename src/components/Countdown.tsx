@@ -64,7 +64,7 @@ export default function Countdown() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl w-full text-center relative z-10"
       >
-        <h2 className="font-great-vibes text-5xl md:text-7xl text-[#cda3ba] mb-6 drop-shadow-sm">
+        <h2 className="font-great-vibes text-5xl md:text-7xl text-[#cda3ba] mb-6 drop-shadow-md">
           Ya falta poco...
         </h2>
         
@@ -72,11 +72,11 @@ export default function Countdown() {
           {timeBlocks.map((block, index) => (
             <div key={block.label} className="flex flex-col items-center">
               <div className="w-20 h-20 md:w-28 md:h-28 rounded-full border border-white/60 shadow-lg flex items-center justify-center bg-white/80 backdrop-blur-sm mb-4">
-                <span className="font-montserrat font-light text-3xl md:text-5xl text-slate-700">
+                <span className="font-montserrat font-medium text-3xl md:text-5xl text-slate-800">
                   {block.value.toString().padStart(2, '0')}
                 </span>
               </div>
-              <span className="font-montserrat text-xs md:text-sm uppercase tracking-[0.2em] text-slate-600 font-medium bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm">
+              <span className="font-montserrat text-xs md:text-sm uppercase tracking-[0.2em] text-slate-800 font-semibold bg-white/50 px-3 py-1 rounded-full backdrop-blur-sm">
                 {block.label}
               </span>
             </div>

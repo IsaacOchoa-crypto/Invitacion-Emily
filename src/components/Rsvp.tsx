@@ -45,9 +45,9 @@ export default function Rsvp() {
 
       <div className="max-w-2xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-great-vibes text-5xl md:text-7xl text-[#cda3ba] mb-4 drop-shadow-sm">Confirma tu Asistencia</h2>
+          <h2 className="font-great-vibes text-5xl md:text-7xl text-[#b08b9f] mb-4 drop-shadow-md">Confirma tu Asistencia</h2>
           <div className="w-16 h-[1px] bg-[#f0e6eb] mx-auto mb-6"></div>
-          <p className="font-montserrat text-slate-500 font-light">
+          <p className="font-montserrat text-slate-800 font-medium">
             Nos encantaría compartir este día contigo. Por favor, confirma antes del 1 de Julio.
           </p>
         </div>
@@ -65,8 +65,8 @@ export default function Rsvp() {
                 <div className="w-20 h-20 bg-[#fff7f9] rounded-full flex items-center justify-center mb-6">
                   <Heart size={36} className="text-[#cda3ba]" fill="#cda3ba" />
                 </div>
-                <h3 className="font-great-vibes text-4xl md:text-5xl text-slate-800 mb-4">¡Gracias por ser parte de este día tan especial!</h3>
-                <p className="font-montserrat text-slate-500 mb-8 font-light">Tu confirmación ha sido enviada con éxito.</p>
+                <h3 className="font-great-vibes text-4xl md:text-5xl text-slate-900 mb-4 font-bold drop-shadow-sm">¡Gracias por ser parte de este día tan especial!</h3>
+                <p className="font-montserrat text-slate-800 mb-8 font-medium">Tu confirmación ha sido enviada con éxito.</p>
                 <button 
                   onClick={() => setStatus('idle')}
                   className="text-[#d4af37] font-montserrat text-xs uppercase tracking-widest hover:text-[#cda3ba] transition-colors"
@@ -84,7 +84,7 @@ export default function Rsvp() {
                 className="space-y-6"
               >
                 <div>
-                  <label htmlFor="name" className="block font-montserrat text-xs font-medium text-slate-500 uppercase tracking-widest mb-2">
+                  <label htmlFor="name" className="block font-montserrat text-xs font-bold text-slate-700 uppercase tracking-widest mb-2">
                     Nombre de la Familia / Invitado
                   </label>
                   <input
@@ -98,7 +98,7 @@ export default function Rsvp() {
                 </div>
 
                 <div>
-                  <label htmlFor="attendance" className="block font-montserrat text-xs font-medium text-slate-500 uppercase tracking-widest mb-2">
+                  <label htmlFor="attendance" className="block font-montserrat text-xs font-bold text-slate-700 uppercase tracking-widest mb-2">
                     ¿Asistirán?
                   </label>
                   <select
@@ -115,7 +115,7 @@ export default function Rsvp() {
 
 
                 <div>
-                  <label htmlFor="notes" className="block font-montserrat text-xs font-medium text-slate-500 uppercase tracking-widest mb-2">
+                  <label htmlFor="notes" className="block font-montserrat text-xs font-bold text-slate-700 uppercase tracking-widest mb-2">
                     Mensaje para Emily (Opcional)
                   </label>
                   <textarea

@@ -17,7 +17,7 @@ export default function Gallery() {
 
       <div className="max-w-5xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="font-great-vibes text-5xl md:text-6xl text-[#cda3ba] mb-4 drop-shadow-sm">Nuestros Momentos Especiales</h2>
+          <h2 className="font-great-vibes text-5xl md:text-6xl text-[#b08b9f] mb-4 drop-shadow-md">Nuestros Momentos Especiales</h2>
           <div className="w-16 h-[1px] bg-[#f0e6eb] mx-auto"></div>
         </div>
 
@@ -37,7 +37,7 @@ export default function Gallery() {
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
-            <p className="font-great-vibes text-3xl text-slate-600 mt-6 text-center">Mi Confirmación</p>
+            <p className="font-great-vibes text-3xl text-slate-800 mt-6 text-center drop-shadow-sm font-bold">Mi Confirmación</p>
           </motion.div>
 
           {/* Foto Graduación */}
@@ -55,7 +55,7 @@ export default function Gallery() {
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
-            <p className="font-great-vibes text-3xl text-slate-600 mt-6 text-center">Mi Graduación</p>
+            <p className="font-great-vibes text-3xl text-slate-800 mt-6 text-center drop-shadow-sm font-bold">Mi Graduación</p>
           </motion.div>
         </div>
       </div>

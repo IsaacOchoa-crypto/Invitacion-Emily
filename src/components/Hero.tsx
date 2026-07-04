@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-sm md:text-base uppercase tracking-[0.2em] font-montserrat mb-6 text-slate-500"
+          className="text-sm md:text-base uppercase tracking-[0.2em] font-montserrat mb-6 text-slate-800 font-medium drop-shadow-sm"
         >
           Acompáñanos a celebrar la<br/>Confirmación y Graduación de
         </motion.p>
@@ -37,7 +37,7 @@ export default function Hero() {
             <img src="/images/img4.jpeg" alt="Confirmación" className="w-full h-full object-cover" />
           </div>
           
-          <h1 className="font-great-vibes text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#d4af37] drop-shadow-sm px-2 col-span-2 order-last md:order-none text-center mt-4 md:mt-0">
+          <h1 className="font-great-vibes text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-[#d4af37] drop-shadow-lg px-2 col-span-2 order-last md:order-none text-center mt-4 md:mt-0">
             Emily Ochoa
           </h1>
 
@@ -52,7 +52,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1 }}
           className="flex flex-col items-center space-y-4"
         >
-          <p className="font-montserrat text-xl md:text-2xl text-slate-700 tracking-widest uppercase">
+          <p className="font-montserrat text-xl md:text-2xl text-slate-900 font-semibold tracking-widest uppercase drop-shadow-sm">
             Miércoles 8 de Julio 2026
           </p>
           <div className="w-20 h-[2px] bg-[#e6cda3] my-2"></div>
@@ -67,7 +67,7 @@ export default function Hero() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce cursor-pointer"
         onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
       >
-        <span className="text-slate-400 text-xs tracking-widest uppercase mb-2 font-montserrat">Descubre más</span>
+        <span className="text-slate-600 font-medium text-xs tracking-widest uppercase mb-2 font-montserrat">Descubre más</span>
         <ChevronDown className="text-[#d4af37]" size={24} />
       </motion.div>
     </section>
