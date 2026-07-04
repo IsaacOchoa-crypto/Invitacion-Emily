@@ -5,13 +5,13 @@ import { Send } from 'lucide-react';
 
 export default function Rsvp() {
   const message = '¡Hola! Confirmo mi asistencia a la fiesta de Emily.';
-  const mamaUrl = `https://wa.me/524271914416?text=${encodeURIComponent(message)}`;
+  const mamaUrl = `https://wa.me/524271149079?text=${encodeURIComponent(message)}`;
   const papaUrl = `https://wa.me/524272775846?text=${encodeURIComponent(message)}`;
 
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Background with soft pastel overlay */}
-      <div 
+      <div
         className="absolute inset-0 w-full h-full bg-cover bg-center opacity-80"
         style={{ backgroundImage: 'url("/images/rsvp-bg.png")' }}
       >
