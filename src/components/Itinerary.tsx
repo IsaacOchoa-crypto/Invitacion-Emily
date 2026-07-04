@@ -25,7 +25,7 @@ export default function Itinerary() {
             <GlassWater size={32} strokeWidth={1.5} />
           </div>
           <h3 className="font-great-vibes text-4xl text-slate-800 mb-2">Recepción y Fiesta</h3>
-          <p className="font-montserrat text-sm tracking-[0.1em] text-[#d4af37] uppercase mb-8">13:00 PM</p>
+          <p className="font-montserrat text-sm tracking-[0.1em] text-[#d4af37] uppercase mb-8">3:00 PM</p>
           
           <div className="flex-grow">
             <p className="font-montserrat font-medium text-slate-700 mb-2">Tepozanes #5, Ojo de Agua</p>
