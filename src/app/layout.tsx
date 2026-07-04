@@ -14,8 +14,22 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Confirmación y Graduación",
-  description: "Acompáñanos a celebrar este día tan especial.",
+  title: "Confirmación y Graduación - Emily Ochoa",
+  description: "Tenemos el honor de invitarte a celebrar este día tan especial. Con cariño, Familia Ochoa.",
+  openGraph: {
+    title: "Confirmación y Graduación - Emily Ochoa",
+    description: "Tenemos el honor de invitarte a celebrar este día tan especial. ¡Toca aquí para ver los detalles y confirmar tu asistencia!",
+    images: [
+      {
+        url: "/images/img4.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Emily Ochoa - Confirmación y Graduación",
+      }
+    ],
+    locale: "es_MX",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
